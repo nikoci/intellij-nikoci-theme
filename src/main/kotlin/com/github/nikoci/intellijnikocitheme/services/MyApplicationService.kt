@@ -1,6 +1,6 @@
-package org.jetbrains.plugins.template.services
+package com.github.nikoci.intellijnikocitheme.services
 
-import org.jetbrains.plugins.template.MyBundle
+import com.github.nikoci.intellijnikocitheme.MyBundle
 
 class MyApplicationService {
 
