@@ -1,1 +1,1 @@
-<img src="src/main/resources/META-INF/img.png" alt="">
+<img src="resources/META-INF/img.png" alt="">
