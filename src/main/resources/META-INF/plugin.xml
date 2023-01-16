@@ -1,18 +1,15 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
     <id>com.github.nikoci.intellijnikocitheme</id>
-    <name>IntelliJ Platform Plugin intellij-nikoci-theme</name>
-    <vendor>nikoci</vendor>
+    <name>Nikoci Theme</name>
+    <version>1.0</version>
+    <vendor email="arijan@nikoci.se" url="https://nikoci.se">Arijan Nikoci</vendor>
+
+    <description>A fork of Emily Curry's Base16 Tomorrow Dark Theme</description>
 
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <applicationService serviceImplementation="com.github.nikoci.intellijnikocitheme.services.MyApplicationService"/>
-        <projectService serviceImplementation="com.github.nikoci.intellijnikocitheme.services.MyProjectService"/>
+        <themeProvider id="com.github.nikoci.intellijnikocitheme" path="/theme/nikocitheme.theme.json" />
     </extensions>
-
-    <applicationListeners>
-        <listener class="com.github.nikoci.intellijnikocitheme.listeners.MyProjectManagerListener"
-                  topic="com.intellij.openapi.project.ProjectManagerListener"/>
-    </applicationListeners>
 </idea-plugin>
